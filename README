@@ -1,3 +1,18 @@
+v0.1 - early version
+--------------------
+A python project for searching archive.org and recording parameters within forms and urls. 
+The results can then be compared to the current version of the web site, any differences can be investigated to see if the current site accepts old parameters which could be vulnerable to security issues such as SQLi, XSS, Authenication Bypasses, etc. exist in dormant parameters.
+
+Usage Examples
+--------------
+Search archive.org for the target domain and include any additional domains listed using the -i option. Since no search year has been provided, interactive mode will be started to help choose an archived year.
+
+  parameterpatrol -t http://www.example.com -i example.com,dev.example.com
+
+  paramterpatrol -s http://localhost:8000
+
+  paramterpatrol -s http://uat.example.com
+  
 Arguments for Searching Archive.org
 -----------------------------------
   -t or --target= (mandatory): Specify the target domain to search for on archive.org. Note: http:// or https:// scheme values should be supplied.\n' 
@@ -9,13 +24,5 @@ Arguments for Searching Other Locations
 ---------------------------------------
   -s or --site= (mandatory): Specify the name of the site to search which is not located on archive.org. This option can be used to generate results of a current site for later comparison against archive.org results or comparison against an older archive of the site from a previous penetration test. Note: http:// or https:// scheme values should be supplied.
 
-Usage Examples
---------------
-Search archive.org for the target domain and include any additional domains listed using the -i option. Since no search year has been provided, interactive mode will be started to help choose an archived year.
 
-  parameterpatrol -t http://www.example.com -i example.com,dev.example.com
-
-  paramterpatrol -s http://localhost:8000
-
-  paramterpatrol -s http://uat.example.com
 
