@@ -1,6 +1,6 @@
 # ParameterPatrol
 
-A penetration testing tool for searching archive.org and recording parameters within forms and urls. 
+A penetration testing tool for searching archive.org and recording parameters within forms and urls for a target web application. 
 The results can then be compared to the current version of the web site, any differences can be investigated to see if the current site accepts old/dormant parameters which could be vulnerable to security issues such as SQLi, XSS, Direct Object Reference, Authenication Bypass, etc.
 Currently, results are saved to a sqlite database in the current working directory.
 The next version will include comparison funtionality between archived results.
