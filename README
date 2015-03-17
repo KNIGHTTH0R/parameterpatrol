@@ -5,6 +5,7 @@ The results can then be compared to the current version of the web site, any dif
 Currently, results are saved to a sqlite database in the current working directory.
 The next version will include comparison funtionality between archived results.
 
+
 ## Usage Examples
 Search archive.org for the target domain and include any additional domains listed using the -i option. Since no search year has been provided, interactive mode will be started to help choose an archived year.
 
