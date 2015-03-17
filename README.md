@@ -12,9 +12,9 @@ Search archive.org for the target domain and include any additional domains list
 ```
   python parameterpatrol.py -t http://www.example.com     (search archive.org for a target domain)
 
-  python parameterpatrol.py -s http://localhost:8000      (scan a locally hosted site)
+  python parameterpatrol.py -s http://localhost:8000      (search a locally hosted site)
 
-  python parameterpatrol.py -s http://uat.example.com     (scan a non-archive.org site)
+  python parameterpatrol.py -s http://uat.example.com     (search a non-archive.org site)
 
   python parameterpatrol.py -t http://www.example.com -i example.com,dev.example.com  (search archive.org for a target domain and include the listed subdomains when searching)
 ```  
