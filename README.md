@@ -10,11 +10,13 @@ The next version will include comparison funtionality between archived results.
 Search archive.org for the target domain and include any additional domains listed using the -i option. Interactive mode will be started to help choose an archived year based on which snapshots are available on archive.org for the chosen domain.
 
 ```
-  parameterpatrol -t http://www.example.com -i example.com,dev.example.com
+  python parameterpatrol.py -t http://www.example.com     (search archive.org for a target domain)
 
-  paramterpatrol -s http://localhost:8000
+  python parameterpatrol.py -s http://localhost:8000      (scan a locally hosted site)
 
-  paramterpatrol -s http://uat.example.com
+  python parameterpatrol.py -s http://uat.example.com     (scan a non-archive.org site)
+
+  python parameterpatrol.py -t http://www.example.com -i example.com,dev.example.com  (search archive.org for a target domain and include the listed subdomains when searching)
 ```  
 
 ## Arguments for Searching Archive.org
