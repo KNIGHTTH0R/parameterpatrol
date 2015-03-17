@@ -72,7 +72,7 @@ class ParameterPatrol():
     print '-----------------------------------'
     print '\t -t or --target= (mandatory): Specify the target domain to search for on archive.org. Note: http:// or https:// scheme values should be supplied.\n' 
 
-    print '\t -i or --includedomain= (optional): Specify a list of additional domains to include in the crawler. If ommited, searches will only  be performed against the target domain. For example, if \"www.example.com\" is the target domain, \"example.com\" or \"dev.example.com\" would not be included unless specified using the \"-i\" option. This option may be a single domain or a comma seperated list (no spaces). Note: a list of domains which have been excluded by the cralwer are logged in a file named \"uncrawled_domains.log\". If you wish to include an ommited domain, re-run the search again, supplying the domain in the \"-i\" argument list. This option should only be used for related domains e.g. sub-domains like dev.example.com. Listing a third party domain such as anotherexample.com will only cause the crawler to crawl the third party site and cause unnecessary delays.\n'
+    print '\t -i or --includedomain= (optional): Specify a list of additional domains to include in the crawler. If ommited, searches will only  be performed against the target domain. For example, if \"www.example.com\" is the target domain, \"example.com\" or \"dev.example.com\" would not be included unless specified using the \"-i\" option. This option may be a single domain or a comma seperated list (no spaces). Note: a list of domains which have been excluded by the cralwer will be reported upon completion. If you wish to include an ommited domain, re-run the search again, supplying the domain in the \"-i\" argument list. This option should only be used for related domains e.g. sub-domains like dev.example.com. Listing a third party domain such as anotherexample.com will only cause the crawler to crawl the third party site and cause unnecessary delays.\n'
 
 
     print 'Arguments for Searching Other Locations'
@@ -83,7 +83,7 @@ class ParameterPatrol():
     print 'Usage Examples'
     print '--------------'
     print 'parameterpatrol -t http://www.example.com -i example.com,dev.example.com'
-    print '\t Search archive.org for the target domain and include any additional domains listed using the -i option. Since no search year has been provided, interactive mode will be started to help choose an archived year.\n'
+    print '\t Search archive.org for the target domain and include any additional domains listed using the -i option. Interactive mode will be started to help choose an archived year based on which snapshots are available on archive.org for the chosen domain.\n'
 
     print 'paramterpatrol -s http://localhost:8000'
     print 'paramterpatrol -s http://uat.example.com'
